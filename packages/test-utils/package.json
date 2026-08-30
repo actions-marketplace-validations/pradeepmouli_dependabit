@@ -1,12 +1,16 @@
 {
   "name": "@dependabit/test-utils",
-  "version": "0.1.14",
+  "version": "0.1.17",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pradeepmouli/dependabit",
+    "url": "https://github.com/pradeepmouli/dependabit.git",
     "directory": "packages/test-utils"
   },
-  "description": "Shared testing utilities for the monorepo",
+  "homepage": "https://pradeepmouli.github.io/dependabit/",
+  "bugs": {
+    "url": "https://github.com/pradeepmouli/dependabit/issues"
+  },
+  "description": "Vitest mocks and fixtures for dependabit internal tests, exposed via /mocks and /fixtures subpaths.",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -25,23 +29,35 @@
     }
   },
   "scripts": {
-    "build": "tsgo -p tsconfig.json",
+    "build": "tsc -p tsconfig.json",
     "clean": "rm -rf dist tsconfig.tsbuildinfo",
-    "type-check": "tsgo --noEmit -p tsconfig.json"
+    "type-check": "tsc --noEmit -p tsconfig.json"
   },
   "devDependencies": {
-    "@types/node": "^25.2.3",
-    "typescript": "^5.9.3",
-    "vitest": "^4.1.0"
+    "@types/node": "^25.8.0",
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.6"
   },
   "peerDependencies": {
     "vitest": "^4.0.0"
   },
   "keywords": [
+    "dependabit",
     "test",
     "testing",
-    "utilities",
-    "vitest"
+    "vitest",
+    "mocks",
+    "fixtures"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "author": "Pradeep Mouli <pmouli@mac.com> (https://github.com/pradeepmouli)",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ]
 }

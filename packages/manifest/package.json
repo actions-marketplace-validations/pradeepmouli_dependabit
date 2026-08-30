@@ -1,12 +1,16 @@
 {
   "name": "@dependabit/manifest",
-  "version": "0.1.14",
+  "version": "0.1.17",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pradeepmouli/dependabit",
+    "url": "https://github.com/pradeepmouli/dependabit.git",
     "directory": "packages/manifest"
   },
-  "description": "Manifest schema and validation for dependency tracking",
+  "homepage": "https://pradeepmouli.github.io/dependabit/",
+  "bugs": {
+    "url": "https://github.com/pradeepmouli/dependabit/issues"
+  },
+  "description": "Zod schema, YAML loader, and validator for dependabit external-dependency manifests and config files.",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -17,27 +21,40 @@
     }
   },
   "scripts": {
-    "build": "tsgo -p tsconfig.json",
+    "build": "tsc -p tsconfig.json",
     "clean": "rm -rf dist tsconfig.tsbuildinfo",
     "dev": "tsx watch src/index.ts",
-    "type-check": "tsgo --noEmit -p tsconfig.json",
+    "type-check": "tsc --noEmit -p tsconfig.json",
     "test": "vitest run",
     "test:watch": "vitest"
   },
   "dependencies": {
-    "yaml": "^2.8.2",
-    "zod": "^4.3.6"
+    "yaml": "^2.9.0",
+    "zod": "^4.4.3"
   },
   "devDependencies": {
-    "@types/node": "^25.2.3",
-    "tsx": "^4.21.0",
-    "typescript": "^5.9.3",
-    "vitest": "^4.1.0"
+    "@types/node": "^25.8.0",
+    "tsx": "^4.22.2",
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.6"
   },
   "keywords": [
+    "dependabit",
     "manifest",
     "schema",
+    "zod",
+    "yaml",
     "validation"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "author": "Pradeep Mouli <pmouli@mac.com> (https://github.com/pradeepmouli)",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ]
 }

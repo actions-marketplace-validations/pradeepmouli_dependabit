@@ -15,6 +15,10 @@
 
 Dependabit automatically discovers, tracks, and monitors external dependencies referenced in your codebase using LLM-powered analysis. Unlike traditional dependency managers that only track package manifests, Dependabit finds informational dependencies like GitHub repos, documentation sites, API references, research papers, and more.
 
+> **⚠️ Pre-1.0 software** — APIs are subject to change between minor versions. Pin to exact versions in production. See the [CHANGELOG](./CHANGELOG.md) for breaking changes between releases.
+
+📚 **Documentation:** <https://pradeepmouli.github.io/dependabit/>
+
 ## Features
 
 ### 🎯 **AI-Powered Detection**
@@ -289,7 +293,7 @@ dependabit/
 
 ## Documentation
 
-- **[Setup Guide](scripts/SETUP.md)** - Development environment setup
+- **[Setup Guide](docs/SETUP.md)** - Development environment setup
 - **[Workspace Guide](docs/WORKSPACE.md)** - Managing monorepo packages
 - **[Development Workflow](docs/DEVELOPMENT.md)** - Development process and best practices
 - **[Testing Guide](docs/TESTING.md)** - Testing infrastructure and guidelines

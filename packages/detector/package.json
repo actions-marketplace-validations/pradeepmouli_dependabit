@@ -1,12 +1,16 @@
 {
   "name": "@dependabit/detector",
-  "version": "0.1.16",
+  "version": "0.1.19",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pradeepmouli/dependabit",
+    "url": "https://github.com/pradeepmouli/dependabit.git",
     "directory": "packages/detector"
   },
-  "description": "LLM-based dependency detection for external resources",
+  "homepage": "https://pradeepmouli.github.io/dependabit/",
+  "bugs": {
+    "url": "https://github.com/pradeepmouli/dependabit/issues"
+  },
+  "description": "Detect external dependencies from READMEs, code comments, diffs, and package files using LLM-assisted parsing.",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -17,31 +21,44 @@
     }
   },
   "scripts": {
-    "build": "tsgo -p tsconfig.json",
+    "build": "tsc -p tsconfig.json",
     "clean": "rm -rf dist tsconfig.tsbuildinfo",
     "dev": "tsx watch src/index.ts",
-    "type-check": "tsgo --noEmit -p tsconfig.json",
+    "type-check": "tsc --noEmit -p tsconfig.json",
     "test": "vitest run",
     "test:watch": "vitest"
   },
   "dependencies": {
-    "@actions/core": "^3.0.0",
+    "@actions/core": "^3.0.1",
     "@dependabit/github-client": "workspace:*",
     "@dependabit/manifest": "workspace:*",
     "ignore": "^7.0.5",
-    "zod": "^4.3.6"
+    "zod": "^4.4.3"
   },
   "devDependencies": {
-    "@types/node": "^25.2.3",
-    "tsx": "^4.21.0",
-    "typescript": "^5.9.3",
-    "vitest": "^4.1.0"
+    "@types/node": "^25.8.0",
+    "tsx": "^4.22.2",
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.6"
   },
   "keywords": [
+    "dependabit",
     "dependency",
     "detection",
     "llm",
-    "ai"
+    "ai",
+    "copilot",
+    "parser"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "author": "Pradeep Mouli <pmouli@mac.com> (https://github.com/pradeepmouli)",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ]
 }

@@ -1,5 +1,36 @@
 # @dependabit/detector
 
+## 0.1.19
+
+### Patch Changes
+
+- [#127](https://github.com/pradeepmouli/dependabit/pull/127) [`74aac50`](https://github.com/pradeepmouli/dependabit/commit/74aac50256e0ac601779e68b5360cba4369db997) Thanks [@pradeepmouli](https://github.com/pradeepmouli)! - - chore: also drop .github/agents, prompts, skills, copilot from master
+  - chore: also drop specs/, .claude-plugin/ from master
+  - chore: drop AI tooling files from master
+- Updated dependencies [[`74aac50`](https://github.com/pradeepmouli/dependabit/commit/74aac50256e0ac601779e68b5360cba4369db997)]:
+  - @dependabit/github-client@0.1.17
+  - @dependabit/manifest@0.1.17
+
+## 0.1.18
+
+### Patch Changes
+
+- [`ca60e76`](https://github.com/pradeepmouli/dependabit/commit/ca60e767ca80da383f6348b3b893c182f4cd184e) Thanks [@pradeepmouli](https://github.com/pradeepmouli)! - Update production dependencies (@actions/core, @actions/github, zod, yaml)
+
+- Updated dependencies [[`ca60e76`](https://github.com/pradeepmouli/dependabit/commit/ca60e767ca80da383f6348b3b893c182f4cd184e)]:
+  - @dependabit/github-client@0.1.16
+  - @dependabit/manifest@0.1.16
+
+## 0.1.17
+
+### Patch Changes
+
+- [#101](https://github.com/pradeepmouli/dependabit/pull/101) [`83b9818`](https://github.com/pradeepmouli/dependabit/commit/83b98187940da75a41fb41990ea03c8d962146b4) Thanks [@pradeepmouli](https://github.com/pradeepmouli)! - - chore: bump typedoc-plugin-to-skills to ^1.3.0
+
+- Updated dependencies [[`83b9818`](https://github.com/pradeepmouli/dependabit/commit/83b98187940da75a41fb41990ea03c8d962146b4)]:
+  - @dependabit/github-client@0.1.15
+  - @dependabit/manifest@0.1.15
+
 ## 0.1.16
 
 ### Patch Changes
