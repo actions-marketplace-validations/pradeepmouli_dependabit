@@ -1,6 +1,6 @@
 {
   "name": "@dependabit/plugin-skills",
-  "version": "0.1.17",
+  "version": "0.1.19",
   "description": "Skills.sh checker plugin for dependabit \u2014 tracks AI agent skill package versions as monitored dependencies.",
   "homepage": "https://pradeepmouli.github.io/dependabit/",
   "bugs": {
@@ -32,13 +32,13 @@
   },
   "dependencies": {
     "@dependabit/manifest": "workspace:*",
-    "zod": "^4.4.3"
+    "zod": "^4.6.5"
   },
   "devDependencies": {
-    "@types/node": "^25.8.0",
-    "tsx": "^4.22.2",
+    "@types/node": "^25.9.1",
+    "tsx": "^4.23.13",
     "typescript": "^7.0.2",
-    "vitest": "^4.1.6"
+    "vitest": "^5.0.1"
   },
   "keywords": [
     "skills",
